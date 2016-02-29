@@ -13,13 +13,17 @@ int main(int argc, const char * argv[]) {
         
         // We are not taking user input in this excercise
         int userTemperature = 98;
-        
-        // Use if-else logic to print out the correct response:
-        
-        NSLog(@"You're running a bit cool.");
-        NSLog(@"You've got the fever... THE OBJECTIVE-C FEVER.");
-        NSLog(@"You'll be alright kid.");
     
+        // Use if-else logic to print out the correct response:
+        if (userTemperature < 98.6) {
+            NSLog(@"You're running a bit cool.");
+            if (userTemperature == 98.6) {
+                NSLog(@"You'll be alright kid.");
+            }
+        } else {
+            NSLog(@"You've got the fever... THE OBJECTIVE-C FEVER.");
+        }
     }
     return 0;
 }
+// I attempted to use NSDecimalNumber, but failed.
